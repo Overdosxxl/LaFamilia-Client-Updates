@@ -1,6 +1,11 @@
 {
-  "version": "0.7.2",
+  "version": "0.7.3",
   "minecraft": "1.20.1",
   "forge": "47.4.28",
-  "files": []
+  "files": [
+    {
+      "path": "mods/migueleconomy_easynpc-0.1.0-1.20.1.jar",
+      "sha256": "5d0ae7e16386c8fb43c42934025e2b0f140d390b4ad059603536e6d6529a9344"
+    }
+  ]
 }
