@@ -56,10 +56,6 @@
       "sha256": "3e792a2cc955f3c2103a7f145e52e2e5a4196b52a82d0b5e80bc7a6015b539ff"
     },
     {
-      "path": "mods/VanillaBackport-forge-1.20.1-1.2.jar",
-      "sha256": "cf908d50d5210a7977d467bc931099c5507d8b4077bbe9c011946f41262b560b"
-    },
-    {
       "path": "mods/piglin_paintings-1.0.0-forge-1.20.1.jar",
       "sha256": "6f754d4ba6f4db54e623b80b1cc6d5c56fcb252aa8b7dd56710a50069391b77d"
     },
