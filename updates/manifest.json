@@ -1,11 +1,71 @@
 {
-  "version": "0.7.3",
+  "version": "0.7.4",
   "minecraft": "1.20.1",
   "forge": "47.4.28",
   "files": [
     {
+      "path": "mods/everycomp-1.20-2.9.27-forge.jar",
+      "sha256": "888eec4224cd9f990de5c7802d01e090e5a7c137e6abc59a7c7ea02a0e2f9218"
+    },
+    {
+      "path": "mods/rw_additionalpaintings-reforged-2.1.0-1.20.1.jar",
+      "sha256": "d9b24811c0629eb68a1e87592a4dc20bdd2e6a3cc77d8826d7904326c4ffebc2"
+    },
+    {
+      "path": "mods/DramaticDoors-QuiFabrge-1.20.1-3.3.3.jar",
+      "sha256": "b38cd5118887acc351b4944b6ea6affeaab91ab93c44ec2df537d91d902c5e78"
+    },
+    {
+      "path": "mods/gardentrails-forge-1.20.1-0.1.14.jar",
+      "sha256": "6c1502e7a5f752eb07aa1b9bd409512142e95012ff569128625f9b142f5d0849"
+    },
+    {
+      "path": "mods/dawnoftimebuilder-forge-1.20.1-1.5.54.jar",
+      "sha256": "73e41254edfb0bed589920185eaee7270e12e0905642a473fee4ab5790c9afdf"
+    },
+    {
+      "path": "mods/fusion-1.3.16-forge-mc1.20.1.jar",
+      "sha256": "a146fe1ccc05715b5e6e3d732c48fcb0ab1698b372e725c23d900b5efa46f349"
+    },
+    {
+      "path": "mods/migueleconomy-1.1.4.jar",
+      "sha256": "058ec83ba64236f4876bdebb76118ec6de1116a9c12b9d7fec57ef0046d3c9a5"
+    },
+    {
       "path": "mods/migueleconomy_easynpc-0.1.0-1.20.1.jar",
       "sha256": "5d0ae7e16386c8fb43c42934025e2b0f140d390b4ad059603536e6d6529a9344"
+    },
+    {
+      "path": "mods/easynpcs-1.0.1.jar",
+      "sha256": "f439b1ca0b1ff122235ab7029da312f1c094172576b549ff19be958c6e0eb5d6"
+    },
+    {
+      "path": "mods/easy_npc-forge-1.20.1-7.16.0.jar",
+      "sha256": "aeb4cc384d5ad6b7be3b9fd960b2567e796cae7255aee3d949a35ad13435245f"
+    },
+    {
+      "path": "mods/easy_npc_config_ui-forge-1.20.1-7.16.0.jar",
+      "sha256": "17b21f626fdac488126c44c227be4976427118eac921f439db6c18d6654890b9"
+    },
+    {
+      "path": "mods/easy_npc_bundle-forge-1.20.1-7.16.0.jar",
+      "sha256": "957c0ebaa1985f833800ad1db5b9f0faacb6e6755765e4e1d944c7d42fef4d2f"
+    },
+    {
+      "path": "mods/Platform-forge-1.20.1-1.4.jar",
+      "sha256": "3e792a2cc955f3c2103a7f145e52e2e5a4196b52a82d0b5e80bc7a6015b539ff"
+    },
+    {
+      "path": "mods/VanillaBackport-forge-1.20.1-1.2.jar",
+      "sha256": "cf908d50d5210a7977d467bc931099c5507d8b4077bbe9c011946f41262b560b"
+    },
+    {
+      "path": "mods/piglin_paintings-1.0.0-forge-1.20.1.jar",
+      "sha256": "6f754d4ba6f4db54e623b80b1cc6d5c56fcb252aa8b7dd56710a50069391b77d"
+    },
+    {
+      "path": "mods/moonlight-1.20-2.16.37-forge.jar",
+      "sha256": "8f0c9c29165911ee399ae9a66ee96c5f1ca9c52557bbfcabae2f44e32f5bb718"
     }
   ]
 }
