@@ -1,5 +1,5 @@
 {
-  "version": "0.7.5",
+  "version": "0.7.6",
   "minecraft": "1.20.1",
   "forge": "47.4.28",
   "files": [
@@ -76,7 +76,7 @@
       "sha256": "101c30d01d0cf9d86190f578eb1e43bd06b64092e95662a00ef52946f472c7b1"
     },
     {
-      "path": "mods/adorablehamsterpets-3.7.0-1.20.1+forge.jar",
+      "path": "mods/adorablehamsterpets-3.7.0-1.20.1-forge.jar",
       "sha256": "4c555289a9fc039db54be509272602092c1cf76e84f64a56f3f05c2b03c5c4a3"
     },
     {
@@ -92,7 +92,7 @@
       "sha256": "300e02535342b710fb34409821de9d097b0d8b17f56a57a17d75d05c4c1c5b63"
     },
     {
-      "path": "mods/fzzy_config-0.7.7+1.20.1+forge.jar",
+      "path": "mods/fzzy_config-0.7.7-1.20.1-forge.jar",
       "sha256": "c4acf6fd3ce66ff28050dd9fdbff25c407f98a4911311ff3f59d651acccc9575"
     },
     {
@@ -116,7 +116,7 @@
       "sha256": "5d7e11f6e2218562ce75d60788fdcfc9ccf59e4532757c18bf37759d5fc739ee"
     },
     {
-      "path": "mods/lmft-1.0.4+1.20.1-forge.jar",
+      "path": "mods/lmft-1.0.4-1.20.1-forge.jar",
       "sha256": "73b0799239f7748ae8050c5409c56a7099df60649c1f982c1c597c68aaedcb3a"
     },
     {
