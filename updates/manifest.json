@@ -1,27 +1,127 @@
 {
-  "version": "0.7.8",
+  "version": "0.7.9",
   "minecraft": "1.20.1",
   "forge": "47.4.23",
   "files": [
     {
-      "path": "mods/everycomp-1.20-2.9.27-forge.jar",
-      "sha256": "888eec4224cd9f990de5c7802d01e090e5a7c137e6abc59a7c7ea02a0e2f9218"
+      "path": "mods/adorablehamsterpets-3.7.0-1.20.1-forge.jar",
+      "sha256": "4c555289a9fc039db54be509272602092c1cf76e84f64a56f3f05c2b03c5c4a3"
     },
     {
-      "path": "mods/rw_additionalpaintings-reforged-2.1.0-1.20.1.jar",
-      "sha256": "d9b24811c0629eb68a1e87592a4dc20bdd2e6a3cc77d8826d7904326c4ffebc2"
+      "path": "mods/architectury-9.2.14-forge.jar",
+      "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af"
     },
     {
-      "path": "mods/gardentrails-forge-1.20.1-0.1.14.jar",
-      "sha256": "6c1502e7a5f752eb07aa1b9bd409512142e95012ff569128625f9b142f5d0849"
+      "path": "mods/artifacts-forge-9.5.19.jar",
+      "sha256": "f1e4dc786866b6e4f2a48142f2acf63bb9bee54ac2f31621ad5d8f18ab54c7b0"
+    },
+    {
+      "path": "mods/athena-forge-1.20.1-3.1.2.jar",
+      "sha256": "64eec9cffb8847a459536096ac396b135ffb07c7d9d13c6a47d9cd7b251276ab"
+    },
+    {
+      "path": "mods/beekeeperhut-forge-mc1.20.1-2.0.1.jar",
+      "sha256": "23c5f923390a80e3aa77477ba668980b97ce16123767d5213445ce483d8b2809"
+    },
+    {
+      "path": "mods/bettervillage-forge-1.20.1-3.3.1-all.jar",
+      "sha256": "efe7ea20a6eb46417d65db362523c3613ce49db412eaad51930e29f0335a4d39"
+    },
+    {
+      "path": "mods/chipped-forge-1.20.1-3.0.7.jar",
+      "sha256": "300e02535342b710fb34409821de9d097b0d8b17f56a57a17d75d05c4c1c5b63"
     },
     {
       "path": "mods/dawnoftimebuilder-forge-1.20.1-1.5.54.jar",
       "sha256": "73e41254edfb0bed589920185eaee7270e12e0905642a473fee4ab5790c9afdf"
     },
     {
+      "path": "mods/easy_npc-forge-1.20.1-7.16.0.jar",
+      "sha256": "aeb4cc384d5ad6b7be3b9fd960b2567e796cae7255aee3d949a35ad13435245f"
+    },
+    {
+      "path": "mods/easy_npc_bundle-forge-1.20.1-7.16.0.jar",
+      "sha256": "957c0ebaa1985f833800ad1db5b9f0faacb6e6755765e4e1d944c7d42fef4d2f"
+    },
+    {
+      "path": "mods/easy_npc_config_ui-forge-1.20.1-7.16.0.jar",
+      "sha256": "17b21f626fdac488126c44c227be4976427118eac921f439db6c18d6654890b9"
+    },
+    {
+      "path": "mods/easynpcs-1.0.1.jar",
+      "sha256": "f439b1ca0b1ff122235ab7029da312f1c094172576b549ff19be958c6e0eb5d6"
+    },
+    {
+      "path": "mods/everycomp-1.20-2.9.27-forge.jar",
+      "sha256": "888eec4224cd9f990de5c7802d01e090e5a7c137e6abc59a7c7ea02a0e2f9218"
+    },
+    {
+      "path": "mods/Fastload-Reforged-mc1.20.1-3.4.0.jar",
+      "sha256": "038a5fa1c044d5afae22502ca1444eeb1a700d34a224996c25f233524ae35a7a"
+    },
+    {
+      "path": "mods/flowerymooblooms-forge-mc1.20.1-2.0.2.jar",
+      "sha256": "6d60679e677329ac872eeac4f52eaa70a8a5b034a6aa1d6635bd0e0a9830c708"
+    },
+    {
       "path": "mods/fusion-1.3.16-forge-mc1.20.1.jar",
       "sha256": "a146fe1ccc05715b5e6e3d732c48fcb0ab1698b372e725c23d900b5efa46f349"
+    },
+    {
+      "path": "mods/fzzy_config-0.7.7-1.20.1-forge.jar",
+      "sha256": "c4acf6fd3ce66ff28050dd9fdbff25c407f98a4911311ff3f59d651acccc9575"
+    },
+    {
+      "path": "mods/gardentrails-forge-1.20.1-0.1.14.jar",
+      "sha256": "6c1502e7a5f752eb07aa1b9bd409512142e95012ff569128625f9b142f5d0849"
+    },
+    {
+      "path": "mods/geckolib-forge-1.20.1-4.8.4.jar",
+      "sha256": "4518779a31b6c2abb92c98b5ad17ef3d60177df68626bfc86c44de2764913c2b"
+    },
+    {
+      "path": "mods/graveyard-FORGE-4.0.0+mc1.20.1.jar",
+      "sha256": "c7a636b77c4b4be93cc988d6a4204836d7985668e18971d38e220dbfc32e412d"
+    },
+    {
+      "path": "mods/hexerei-0.4.2.3.jar",
+      "sha256": "419db9f15af0ac694dc53a9cc99fa97c3a0ef787ae3d43d9aff87d2030e3f556"
+    },
+    {
+      "path": "mods/kotlinforforge-4.12.0-all.jar",
+      "sha256": "6a66c6a68ec09f8717cdbf06883394f0ee24d7cd826b7134a0f81839e8e720ae"
+    },
+    {
+      "path": "mods/letsdo-addon-structures-1.7.2.jar",
+      "sha256": "58dacc74b4703fc8f9508376964f82d2cf0a654c4f00e954426e25175f2775f3"
+    },
+    {
+      "path": "mods/letsdo-bakery-forge-2.0.6.jar",
+      "sha256": "feb70544c3b8409122c26b9a80d86691c8e36508b95e24fe7bd89e3a973a947e"
+    },
+    {
+      "path": "mods/letsdo-bloomingnature-forge-1.0.12.jar",
+      "sha256": "d55f72b24c4d5f3236b3754c1c9209757a4740771bc95a40406ad90022263488"
+    },
+    {
+      "path": "mods/letsdo-farm_and_charm-forge-1.0.14.jar",
+      "sha256": "2311790589a58678640cb788de13bebd40efe3ed92f03e82a8fa871850a382eb"
+    },
+    {
+      "path": "mods/letsdo-meadow-forge-1.3.25.jar",
+      "sha256": "e96a241cc2b991d158bedb6e9239ce77656a9858c76345c7dc7b6eadeaa6ddcf"
+    },
+    {
+      "path": "mods/letsdo-vinery-forge-1.4.41.jar",
+      "sha256": "5d7e11f6e2218562ce75d60788fdcfc9ccf59e4532757c18bf37759d5fc739ee"
+    },
+    {
+      "path": "mods/libraryferret-forge-1.20.1-4.0.0.jar",
+      "sha256": "66a151ed397904135c0109ce390bee93961ef7dd329a2d66860ef5f27adff335"
+    },
+    {
+      "path": "mods/lmft-1.0.4-1.20.1-forge.jar",
+      "sha256": "73b0799239f7748ae8050c5409c56a7099df60649c1f982c1c597c68aaedcb3a"
     },
     {
       "path": "mods/migueleconomy-1.1.4.jar",
@@ -32,30 +132,6 @@
       "sha256": "5d0ae7e16386c8fb43c42934025e2b0f140d390b4ad059603536e6d6529a9344"
     },
     {
-      "path": "mods/easynpcs-1.0.1.jar",
-      "sha256": "f439b1ca0b1ff122235ab7029da312f1c094172576b549ff19be958c6e0eb5d6"
-    },
-    {
-      "path": "mods/easy_npc-forge-1.20.1-7.16.0.jar",
-      "sha256": "aeb4cc384d5ad6b7be3b9fd960b2567e796cae7255aee3d949a35ad13435245f"
-    },
-    {
-      "path": "mods/easy_npc_config_ui-forge-1.20.1-7.16.0.jar",
-      "sha256": "17b21f626fdac488126c44c227be4976427118eac921f439db6c18d6654890b9"
-    },
-    {
-      "path": "mods/easy_npc_bundle-forge-1.20.1-7.16.0.jar",
-      "sha256": "957c0ebaa1985f833800ad1db5b9f0faacb6e6755765e4e1d944c7d42fef4d2f"
-    },
-    {
-      "path": "mods/Platform-forge-1.20.1-1.4.jar",
-      "sha256": "3e792a2cc955f3c2103a7f145e52e2e5a4196b52a82d0b5e80bc7a6015b539ff"
-    },
-    {
-      "path": "mods/piglin_paintings-1.0.0-forge-1.20.1.jar",
-      "sha256": "6f754d4ba6f4db54e623b80b1cc6d5c56fcb252aa8b7dd56710a50069391b77d"
-    },
-    {
       "path": "mods/moonlight-1.20-2.16.37-forge.jar",
       "sha256": "8f0c9c29165911ee399ae9a66ee96c5f1ca9c52557bbfcabae2f44e32f5bb718"
     },
@@ -64,60 +140,68 @@
       "sha256": "05f7b5d52f6b8f0fd7f8b4822fa07a192d1394d83a264309c9d221d6d4fd21c5"
     },
     {
+      "path": "mods/piglin_paintings-1.0.0-forge-1.20.1.jar",
+      "sha256": "6f754d4ba6f4db54e623b80b1cc6d5c56fcb252aa8b7dd56710a50069391b77d"
+    },
+    {
+      "path": "mods/Platform-forge-1.20.1-1.4.jar",
+      "sha256": "3e792a2cc955f3c2103a7f145e52e2e5a4196b52a82d0b5e80bc7a6015b539ff"
+    },
+    {
+      "path": "mods/RegionsUnexploredForge-0.5.6+1.20.1.jar",
+      "sha256": "5ba96a83d12c0e2eb3b22c0fa11262ff6d49ba8d2ebd03e1c59ab47ea7dcc2c6"
+    },
+    {
+      "path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "sha256": "b13afb95231d88e1caea5a045967e0fc291b29020b0d26ad39e6f9e9a551fee8"
+    },
+    {
       "path": "mods/Ribbits-1.20.1-Forge-3.0.5.jar",
       "sha256": "e04aa665df7e96844fe8833f29cc343feefac8ad7b949399d7b4a60475123e2b"
+    },
+    {
+      "path": "mods/rw_additionalpaintings-reforged-2.1.0-1.20.1.jar",
+      "sha256": "d9b24811c0629eb68a1e87592a4dc20bdd2e6a3cc77d8826d7904326c4ffebc2"
+    },
+    {
+      "path": "mods/TerraBlender-forge-1.20.1-3.0.1.11.jar",
+      "sha256": "63da472e55998162159ef3038ee9561bf5c23a4430e4155301cbecbf65d1e80a"
+    },
+    {
+      "path": "mods/trek-B0.6.2.jar",
+      "sha256": "898f0fbe9cc30758b8822bba08bb52413dad38b742454baf60fff12694ebd73c"
+    },
+    {
+      "path": "mods/villagertradingplus-forge-mc1.20.1-1.1.0.jar",
+      "sha256": "bd16ea6d6e21c7add3bbe1c6ee81312e63a35b5c697cdd0b15eb655750e542e5"
     },
     {
       "path": "mods/YungsApi-1.20-Forge-4.0.6.jar",
       "sha256": "101c30d01d0cf9d86190f578eb1e43bd06b64092e95662a00ef52946f472c7b1"
     },
     {
-      "path": "mods/adorablehamsterpets-3.7.0-1.20.1-forge.jar",
-      "sha256": "4c555289a9fc039db54be509272602092c1cf76e84f64a56f3f05c2b03c5c4a3"
+      "path": "mods/YungsBetterDungeons-1.20-Forge-4.0.4.jar",
+      "sha256": "93c24e4075c51da0866f3fc92322bdb60e590ac2cd78dce275460839c54c36f5"
     },
     {
-      "path": "mods/architectury-9.2.14-forge.jar",
-      "sha256": "218b471d0b8a1f6cda14cfc1beb9eeb0df54304500acc6c5613d9b88ec65d9af"
+      "path": "mods/YungsBetterEndIsland-1.20-Forge-2.0.6.jar",
+      "sha256": "05c2f43a67116f0bbca32d903b55ce1655b9319ed6554080de02bd1d0c232a83"
     },
     {
-      "path": "mods/athena-forge-1.20.1-3.1.2.jar",
-      "sha256": "64eec9cffb8847a459536096ac396b135ffb07c7d9d13c6a47d9cd7b251276ab"
+      "path": "mods/YungsBetterJungleTemples-1.20-Forge-2.0.5.jar",
+      "sha256": "728c0a807742356887edf7d4f736b3870b7c84007ec9c495c27da1dc0b61078d"
     },
     {
-      "path": "mods/chipped-forge-1.20.1-3.0.7.jar",
-      "sha256": "300e02535342b710fb34409821de9d097b0d8b17f56a57a17d75d05c4c1c5b63"
+      "path": "mods/YungsBetterMineshafts-1.20-Forge-4.0.4.jar",
+      "sha256": "6632e7bcc58325098e85bcb755483de7cb3af92a5ea548f3b5c0162cbf0dc1dc"
     },
     {
-      "path": "mods/fzzy_config-0.7.7-1.20.1-forge.jar",
-      "sha256": "c4acf6fd3ce66ff28050dd9fdbff25c407f98a4911311ff3f59d651acccc9575"
+      "path": "mods/YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar",
+      "sha256": "12cffc99dccca69d294ba5bc39c331367794b339061572a6f3773620303a2f51"
     },
     {
-      "path": "mods/geckolib-forge-1.20.1-4.8.4.jar",
-      "sha256": "4518779a31b6c2abb92c98b5ad17ef3d60177df68626bfc86c44de2764913c2b"
-    },
-    {
-      "path": "mods/kotlinforforge-4.12.0-all.jar",
-      "sha256": "6a66c6a68ec09f8717cdbf06883394f0ee24d7cd826b7134a0f81839e8e720ae"
-    },
-    {
-      "path": "mods/letsdo-bakery-forge-2.0.6.jar",
-      "sha256": "feb70544c3b8409122c26b9a80d86691c8e36508b95e24fe7bd89e3a973a947e"
-    },
-    {
-      "path": "mods/letsdo-farm_and_charm-forge-1.0.14.jar",
-      "sha256": "2311790589a58678640cb788de13bebd40efe3ed92f03e82a8fa871850a382eb"
-    },
-    {
-      "path": "mods/letsdo-vinery-forge-1.4.41.jar",
-      "sha256": "5d7e11f6e2218562ce75d60788fdcfc9ccf59e4532757c18bf37759d5fc739ee"
-    },
-    {
-      "path": "mods/lmft-1.0.4-1.20.1-forge.jar",
-      "sha256": "73b0799239f7748ae8050c5409c56a7099df60649c1f982c1c597c68aaedcb3a"
-    },
-    {
-      "path": "mods/resourcefullib-forge-1.20.1-2.1.29.jar",
-      "sha256": "b13afb95231d88e1caea5a045967e0fc291b29020b0d26ad39e6f9e9a551fee8"
+      "path": "mods/YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar",
+      "sha256": "bea2640c4afeb5231362a756d886ca4f246c7951175c91348272b3ce5d483bae"
     }
   ]
 }
