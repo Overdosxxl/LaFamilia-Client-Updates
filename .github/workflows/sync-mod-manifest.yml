@@ -1,0 +1,53 @@
+name: Sync La Familia mod manifest
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'updates/files/mods/**'
+      - '.github/workflows/sync-mod-manifest.yml'
+permissions:
+  contents: write
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild mod manifest from uploaded JARs
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          manifest_path = Path("updates/manifest.json")
+          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+          folder = Path("updates/files/mods")
+          jars = sorted(folder.glob("*.jar"), key=lambda p: p.name.casefold())
+          if not jars:
+              raise SystemExit("No JARs found; refusing to clear manifest")
+          files = []
+          for path in jars:
+              digest = hashlib.sha256()
+              with path.open("rb") as src:
+                  for chunk in iter(lambda: src.read(1024 * 1024), b""):
+                      digest.update(chunk)
+              files.append({"path": "mods/" + path.name, "sha256": digest.hexdigest()})
+          old_files = manifest.get("files", [])
+          if old_files != files:
+              manifest["files"] = files
+              parts = manifest.get("version", "0.7.8").split(".")
+              if len(parts) == 3 and all(p.isdigit() for p in parts):
+                  parts[-1] = str(int(parts[-1]) + 1)
+                  manifest["version"] = ".".join(parts)
+              manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+              print("Updated manifest to", manifest["version"], "with", len(files), "mods")
+          else:
+              print("Manifest already current")
+          PY
+      - name: Commit updated manifest
+        run: |
+          if ! git diff --quiet -- updates/manifest.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add updates/manifest.json
+            git commit -m "Sync launcher manifest with uploaded mod files"
+            git push
+          fi
