@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "8a6afca9-bacc-49d7-a309-6d9dbac7a1e7",
+      "title": "Test 2",
+      "date": "2026-10-28",
+      "summary": "Test 2",
+      "text": "neuer Test",
+      "image": "",
+      "visible": true
+    },
+    {
       "id": "9115747f-3b49-4a8c-9234-06bfe9c0fa24",
       "title": "Test",
       "date": "2026-10-28",
