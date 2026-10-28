@@ -1,0 +1,13 @@
+{
+  "news": [
+    {
+      "id": "9115747f-3b49-4a8c-9234-06bfe9c0fa24",
+      "title": "Test",
+      "date": "2026-10-28",
+      "summary": "Test News",
+      "text": "Das ist ein Test",
+      "image": "",
+      "visible": true
+    }
+  ]
+}
