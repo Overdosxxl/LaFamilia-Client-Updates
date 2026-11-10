@@ -1,4 +1,4 @@
-name: Sync La Familia mod manifest
+name: Sync Fabric 1.21.1 mod manifest
 on:
   workflow_dispatch:
   push:
@@ -12,42 +12,40 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Rebuild mod manifest from uploaded JARs
+      - name: Validate mods and generate SHA256 manifest
         run: |
           python - <<'PY'
-          import hashlib, json
+          import hashlib, json, zipfile
           from pathlib import Path
+          root = Path("updates/files/mods")
+          jars = sorted(root.glob("*.jar"), key=lambda p: p.name.casefold())
           manifest_path = Path("updates/manifest.json")
-          manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-          folder = Path("updates/files/mods")
-          jars = sorted(folder.glob("*.jar"), key=lambda p: p.name.casefold())
-          if not jars:
-              raise SystemExit("No JARs found; refusing to clear manifest")
+          old = json.loads(manifest_path.read_text(encoding="utf-8"))
+          if old.get("minecraft") != "1.21.1" or old.get("loader") != "fabric":
+              raise SystemExit("Manifest must target Fabric 1.21.1")
           files = []
           for path in jars:
-              digest = hashlib.sha256()
-              with path.open("rb") as src:
-                  for chunk in iter(lambda: src.read(1024 * 1024), b""):
-                      digest.update(chunk)
-              files.append({"path": "mods/" + path.name, "sha256": digest.hexdigest()})
-          old_files = manifest.get("files", [])
-          if old_files != files:
-              manifest["files"] = files
-              parts = manifest.get("version", "0.7.8").split(".")
-              if len(parts) == 3 and all(p.isdigit() for p in parts):
-                  parts[-1] = str(int(parts[-1]) + 1)
-                  manifest["version"] = ".".join(parts)
-              manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-              print("Updated manifest to", manifest["version"], "with", len(files), "mods")
-          else:
-              print("Manifest already current")
+              try:
+                  with zipfile.ZipFile(path) as z:
+                      if "fabric.mod.json" not in z.namelist():
+                          raise ValueError("missing fabric.mod.json")
+                      meta = json.loads(z.read("fabric.mod.json"))
+                      if "fabric" not in str(meta.get("environment", "*")) and not isinstance(meta, dict):
+                          raise ValueError("invalid Fabric metadata")
+              except Exception as exc:
+                  raise SystemExit(f"Invalid Fabric mod {path.name}: {exc}")
+              digest = hashlib.sha256(path.read_bytes()).hexdigest()
+              files.append({"path": "mods/" + path.name, "sha256": digest})
+          old["files"] = files
+          manifest_path.write_text(json.dumps(old, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print("Fabric mod count:", len(files))
           PY
-      - name: Commit updated manifest
+      - name: Commit manifest update
         run: |
           if ! git diff --quiet -- updates/manifest.json; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add updates/manifest.json
-            git commit -m "Sync launcher manifest with uploaded mod files"
+            git commit -m "Sync Fabric 1.21.1 mod manifest"
             git push
           fi

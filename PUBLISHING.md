@@ -1,16 +1,9 @@
-# La Familia – Updates veröffentlichen
+# La Familia Fabric 1.21.1 Mods
 
-Dieses öffentliche Repository stellt **nur freigegebene Mod- und Client-Dateien** bereit.
+Upload **Fabric 1.21.1 client mod JAR files** to `updates/files/mods/`.
 
-## Mods veröffentlichen
-1. Lade eine rechtmäßig weiterverteilbare Forge-1.20.1-Mod unter `updates/files/mods/DATEINAME.jar` hoch.
-2. Ermittle lokal ihre SHA-256-Prüfsumme, z. B. in Windows PowerShell:
-   `Get-FileHash -Algorithm SHA256 .\\DATEINAME.jar`
-3. Ergänze `updates/manifest.json` um `{"path":"mods/DATEINAME.jar","sha256":"ECHTE_64_STELLIGE_PRUEFSUMME"}`.
-4. Erhöhe bei Bedarf die Versionsnummer im Manifest und veröffentliche **das Manifest zuletzt**.
+GitHub Actions checks for `fabric.mod.json` and generates `updates/manifest.json` containing SHA-256 checksums. The launcher downloads only files named in this manifest.
 
-Resourcepacks, Shaderpacks und Konfigurationsdateien können analog unter `updates/files/resourcepacks/`, `updates/files/shaderpacks/` und `updates/files/config/` veröffentlicht werden.
+Do **not** upload Forge 1.20.1 JAR files. Server-only Fabric mods should also not be shipped to client computers. Check each dependency and compatibility manually before publishing.
 
-Nur Dateien, die im Manifest stehen, werden verteilt. Entfernte Einträge führen dazu, dass der Launcher zuvor von ihm verwaltete Dateien beim nächsten Update entfernt. Andere Dateien werden nicht verändert.
-
-**Wichtig:** GitHub hat Dateigrößenlimits. Für größere Modpacks ist ein Release-Asset- oder CDN-basierter Downloadmechanismus nötig. Lade keine Zugangsdaten oder Dateien ohne Verteilungsrechte hoch.
+News remain in `news/news.json` and `news/images/`.
